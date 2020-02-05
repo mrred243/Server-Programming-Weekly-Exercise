@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html x xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Server Programming with Spring boot</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+</head>
+<body>
+	<p>Welcome to Haaga-Helia</p>
+<table>
+<tbody>
+<tr th:each = "student : ${students}">
+    <td th:text="${student.getName()}"></td>
+
+</tbody>
+
+
+</table>
+
+</body>
